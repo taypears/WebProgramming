@@ -1,0 +1,88 @@
+<!doctype html> <!--included in all docs to show it's html-->
+<html lang="en-US"> <!--wraps the entire content of the page-->
+<head>
+    <title> lab3-forms.html</title> <!--shown in the browser tab-->
+    <meta charset="utf-8">
+    <style>
+      body{text-align: center;}
+      form{display: inline-block; padding: 1em; border: 1px solid#ccc; border-radius: 1em;}
+      ul{list-style: none; padding: 0; margin: 0; }
+      form li + li {margin-top: 1em;}
+      label{display:inline-block; min-width: 90px; text-align: right; }
+      input, textarea {font: 1em sans-serif; width:300px; box-sizing: border-box; border: 1px solid #999;}
+      input:focus {outline-style: solid; outline-color: #000;}
+      textarea {vertical-align: top; height: 5em;}
+      .button {padding-left: 90px;}
+      button {margin-left: 0.5em;}
+    </style>
+</head>
+<body>
+    <h1>Coffee Order Form</h1>
+    <p>
+        Please enter your coffee order details below.
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" method="get"> <!--This is the URL where the form data will be sent-->
+       <ul>
+        <li>
+            <label for="name">Name:*</label> <!--1. This section is for a name input  for the coffee order form-->
+            <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+            <label for="mail">Email:*</label> <!--2. This is the input section for email-->
+            <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+            <legend>Payment information</legend> <!--3. This section is for a dropdown option-->
+                <p>
+                 <label for="coffee_type">
+                     <span>Coffee Type:</span>
+                </label>
+                <select id="coffee_type" name="coffee_type">
+                    <option value="latte">Latte</option>
+                    <option value="americano">Americano</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="frap">Frappuccino</option>
+                    <option value="cap">Cappuccino</option>
+                </select>
+                </p>
+        </li>  
+        <li>
+            <fieldset> <!--4. This section is for radio button options-->
+                <legend>Coffee Size</legend>
+                <p> <input type="radio" name="size" id="size_1" value="small"> <label for="size_1">Small</label> </p>
+                <p> <input type="radio" name="size" id="size_2" value="medium"> <label for="size_2">Medium</label> </p>
+                <p> <input type="radio" name="size" id="size_3" value="large"> <label for="size_3">Large</label> </p>
+            </fieldset>
+        </li>   
+        <li>
+            <p>  <!--5. This section is for the checkbox option-->
+                <input type="checkbox" id="extra_1" name="extra_whipped_cream" value="whipped_cream">
+                <label for="extra_1">Whipped Cream</label>
+              </p>
+              <p>
+                <input type="checkbox" id="extra_2" name="extra_shot" value="shot">
+                <label for="extra_2">Extra Shot</label>
+              </p>
+              <p>
+                <input type="checkbox" id="extra_3" name="extra_almond_milk" value="almond_milk">
+                <label for="extra_3" >Almond Milk</label>
+              </p>
+              <p>
+                <input type="checkbox" id="extra_4" name="extra_soy_milk" value="soy_milk">
+                <label for="extra_4" >Soy Milk</label>
+              </p>
+        </li> 
+        <li>
+            <label for="msg">Special Instructions:</label> <!--6. This section is a multiline text area-->
+            <textarea id="msg" name="special_instructions"> </textarea>
+        </li>
+        <li>
+            <li class="button">  <!--7. This section is for the button function-->
+                <button type="submit">Submit your order</button>
+            </p>
+            <input/>
+        </li> 
+        </ul>
+    </form>
+</body>
+</html>
