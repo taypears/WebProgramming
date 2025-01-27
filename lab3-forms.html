@@ -19,7 +19,8 @@
 <body>
     <h1>Coffee Order Form</h1>
     <p>
-        Please enter your coffee order details below.
+        Please enter your coffee order details below. 
+        <em>All items with an asterisks (*) are required to submit your order.</em>
     </p>
     <form action="https://www.w3schools.com/action_page.php" method="get"> <!--This is the URL where the form data will be sent-->
        <ul>
@@ -32,10 +33,9 @@
             <input type="email" id="mail" name="user_email" />
         </li>
         <li>
-            <legend>Payment information</legend> <!--3. This section is for a dropdown option-->
-                <p>
+                <p>  <!--3. This section is for a dropdown option-->
                  <label for="coffee_type">
-                     <span>Coffee Type:</span>
+                     <span>Coffee Type:*</span>
                 </label>
                 <select id="coffee_type" name="coffee_type">
                     <option value="latte">Latte</option>
@@ -48,7 +48,7 @@
         </li>  
         <li>
             <fieldset> <!--4. This section is for radio button options-->
-                <legend>Coffee Size</legend>
+                <legend>Coffee Size:*</legend>
                 <p> <input type="radio" name="size" id="size_1" value="small"> <label for="size_1">Small</label> </p>
                 <p> <input type="radio" name="size" id="size_2" value="medium"> <label for="size_2">Medium</label> </p>
                 <p> <input type="radio" name="size" id="size_3" value="large"> <label for="size_3">Large</label> </p>
@@ -79,8 +79,7 @@
         <li>
             <li class="button">  <!--7. This section is for the button function-->
                 <button type="submit">Submit your order</button>
-            </p>
-            <input/>
+            </li>
         </li> 
         </ul>
     </form>
