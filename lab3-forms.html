@@ -51,7 +51,8 @@
         </li>  
         <li>
             <fieldset> <!-- 4. This section is for radio button options -->
-                <span>Coffee Size:*</span>
+                <legend>Coffee Size:*</legend> <!--legend puts the text within the border 
+                while span places label above and outside the selection box-->
                 <p> <input type="radio" name="size" id="size_1" value="small"> <label for="size_1">Small</label> </p>
                 <p> <input type="radio" name="size" id="size_2" value="medium"> <label for="size_2">Medium</label> </p>
                 <p> <input type="radio" name="size" id="size_3" value="large"> <label for="size_3">Large</label> </p>
@@ -69,12 +70,12 @@
                 <label for="extra_2">Extra Shot</label>
               </p>
               <p>
-                <input type="checkbox" id="extra_3" name="extra_almond_milk" value="almond_milk">
-                <label for="extra_3" >Almond Milk</label>
+                <input type="checkbox" id="extra_3" name="almond_milk_substitute" value="almond_milk">
+                <label for="extra_3" >Almond Milk Substitution</label>
               </p>
               <p>
-                <input type="checkbox" id="extra_4" name="extra_soy_milk" value="soy_milk">
-                <label for="extra_4" >Soy Milk</label>
+                <input type="checkbox" id="extra_4" name="soy_milk_substitue" value="soy_milk">
+                <label for="extra_4" >Soy Milk Substitution</label>
               </p>
             </fieldset>
         </li> 
