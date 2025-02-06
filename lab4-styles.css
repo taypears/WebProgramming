@@ -1,0 +1,22 @@
+h1 {
+    color: rgb(86, 86, 204);
+  }
+  .special {
+    color: orange;
+    font-weight: bold;
+  }
+  .special2 {text-align: center;}
+  li em {
+    color: rgb(206, 57, 169);
+  }
+  li {
+        color: bisque;
+        caret-color: aqua;
+  }
+  p { color: rgb(126, 60, 13);
+        padding: 10px;    
+}
+  body {
+    background-color: rgb(228, 198, 203);
+    font-family: Arial, Helvetica, sans-serif;
+  }
