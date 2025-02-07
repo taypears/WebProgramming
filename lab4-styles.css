@@ -21,14 +21,14 @@ p { /*3. applies to all within the paragraph*/
     padding: 10px;
 }
 
-ul { /*4a. Applies to the list*/
-    list-style-type: square; /*changes the type of bullet point/numbering*/
-    list-style-position: inside; /*moves the bullet points to inside the list area*/
-    color: rgb(37, 100, 63); /*changes the color */
+li::marker { /*4a. applies to ALL bullet points*/
+    color: rgb(199, 131, 85);
 }
 
-li::marker { /*4b. applies to ALL bullet points*/
-    color: rgb(199, 131, 85);
+ul { /*4b. Applies to the list*/
+    list-style-type: square; /*changes the type of bullet point/numbering*/
+    list-style-position: inside; /*moves the bullet points to inside the list area*/
+    color: rgb(14, 51, 29); /*changes the color */
 }
 
 a { /*5a. applies to the link*/
@@ -46,7 +46,9 @@ a:hover {/*5b. Applies to when link is being hovered over*/
     padding-inline: 15px;
     text-align: center;
 }
- /*My own extras are below*/
+
+
+ /*My own extra additions are below*/
 .title {
     border-style: dotted; /*changes the textbox border style*/
     border-color: darkolivegreen;/*changes the textbox border color*/
