@@ -1,22 +1,44 @@
-h1 {
-    color: rgb(86, 86, 204);
+body { /*1. applies to all within the body element*/
+    background-color: rgb(167, 194, 174); /*background color of entire webpage*/
+    font-family: Arial, Helvetica, sans-serif; /*font for whole webpage*/
   }
-  .special {
-    color: orange;
-    font-weight: bold;
-  }
-  .special2 {text-align: center;}
-  li em {
-    color: rgb(206, 57, 169);
-  }
-  li {
-        color: bisque;
-        caret-color: aqua;
-  }
-  p { color: rgb(126, 60, 13);
-        padding: 10px;    
+
+header{ /*2. applies to all within the header element*/
+    text-align: center; /*aligns the text to the center */
+    color: rgb(16, 85, 70); /*changes the color of the text*/
 }
-  body {
-    background-color: rgb(228, 198, 203);
-    font-family: Arial, Helvetica, sans-serif;
-  }
+
+.special { /*Extra. applies to all with the special element*/
+    color: rgb(16, 85, 70);
+}
+
+p { /*3. applies to all within the paragraph*/
+    color: rgb(42, 87, 60);
+    padding: 10px;
+}
+
+ul { /*4a. Applies to the list*/
+    list-style-type: square; /*changes the type of bullet point/numbering*/
+    list-style-position: inside; /*moves the bullet points to inside the list area*/
+    color: rgb(37, 100, 63); /*changes the color */
+}
+
+li::marker { /*4b. applies to the bullet points*/
+    color: rgb(74, 88, 218);
+}
+
+a { /*5a. applies to the link*/
+    color: rgb(6, 6, 148); /*changes the color of the link*/
+}
+
+a:hover {/*5b. Applies to when link is being hovered over*/
+    text-decoration: none; /*removes underline from link*/
+}
+
+.styled-box { /*6. applies to the text box*/
+    border-style: solid; /*border of text box at bottom*/
+    color: rgb(22, 22, 16); /*color of box border*/
+    background-color: antiquewhite; /*background color*/
+    padding-inline: 15px;
+    text-align: center;
+}
