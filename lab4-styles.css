@@ -1,15 +1,19 @@
 body { /*1. applies to all within the body element*/
     background-color: rgb(167, 194, 174); /*background color of entire webpage*/
     font-family: Arial, Helvetica, sans-serif; /*font for whole webpage*/
+    padding-left: 30px;/*my own addition, adds fixed space to left of page*/
+    padding-right: 30px; /*my own addition, adds fixed space to right of page*/
+    padding-top: 40px;
   }
 
 header{ /*2. applies to all within the header element*/
     text-align: center; /*aligns the text to the center */
-    color: rgb(16, 85, 70); /*changes the color of the text*/
+    color: rgb(29, 70, 61); /*changes the color of the text*/
 }
 
 .special { /*Extra. applies to all with the special element*/
     color: rgb(16, 85, 70);
+    padding-top: 15px; /*my own addition; adds space above subheading*/
 }
 
 p { /*3. applies to all within the paragraph*/
@@ -24,7 +28,7 @@ ul { /*4a. Applies to the list*/
 }
 
 li::marker { /*4b. applies to the bullet points*/
-    color: rgb(74, 88, 218);
+    color: rgb(199, 131, 85);
 }
 
 a { /*5a. applies to the link*/
@@ -38,7 +42,27 @@ a:hover {/*5b. Applies to when link is being hovered over*/
 .styled-box { /*6. applies to the text box*/
     border-style: solid; /*border of text box at bottom*/
     color: rgb(22, 22, 16); /*color of box border*/
-    background-color: antiquewhite; /*background color*/
+    background-color: lightgray; /*background color*/
     padding-inline: 15px;
     text-align: center;
+}
+ /*My own extras are below*/
+.title {
+    border-style: dotted; /*changes the textbox border style*/
+    border-color: darkolivegreen;/*changes the textbox border color*/
+    border-radius: 15px; /*rpunds the textbox corners*/
+    background-color: rgb(231, 214, 207);/*changes the textbox background color*/
+    padding-top: 15px; /*adds space within the text box above the text*/
+    padding-bottom: 15px; /*adds space within the text box below the text*/
+}
+
+main { /*Body of the page without the heading*/
+    border-style: dotted; /*changes the textbox border style*/
+    border-color: darkolivegreen;/*changes the textbox border color*/
+    border-radius: 15px; /*rpunds the textbox corners*/
+    background-color: rgb(231, 214, 207);/*changes the textbox background color*/
+    padding-top: 15px; /*adds space within the text box above the text*/
+    padding-bottom: 15px; /*adds space within the text box below the text*/
+    padding-left: 80px; /*adds space to the left*/
+    padding-right: 80px; /*adds space to the left*/
 }
