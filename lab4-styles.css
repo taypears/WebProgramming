@@ -32,7 +32,7 @@ ul { /*4b. Applies to the list*/
 }
 
 a { /*5a. applies to the link*/
-    color: rgb(6, 6, 148); /*changes the color of the link*/
+    color: rgb(84, 116, 223); /*changes the color of the link*/
 }
 
 a:hover {/*5b. Applies to when link is being hovered over*/
