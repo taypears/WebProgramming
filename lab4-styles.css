@@ -27,7 +27,7 @@ ul { /*4a. Applies to the list*/
     color: rgb(37, 100, 63); /*changes the color */
 }
 
-li::marker { /*4b. applies to the bullet points*/
+li::marker { /*4b. applies to ALL bullet points*/
     color: rgb(199, 131, 85);
 }
 
@@ -67,13 +67,8 @@ main { /*Body of the page without the heading*/
     padding-right: 80px; /*adds space to the left*/
 }
 
-table {
-    border-style: none; /*removes textbox border*/
-    padding-bottom: 20px; /*adds space within the text box below the text*/
-    text-align: center;
-}
-
-.topnav {
-    float: left; /*makes nav bar look better*/
+ol { /*applies to the navigation bar and its list styling*/
+        list-style-type: none; /*removes the bullet points before the links*/
+    
 }
 
