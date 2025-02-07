@@ -1,5 +1,5 @@
 body { /*1. applies to all within the body element*/
-    background-color: rgb(167, 194, 174); /*background color of entire webpage*/
+    background-color: rgb(184, 199, 188); /*background color of entire webpage*/
     font-family: Arial, Helvetica, sans-serif; /*font for whole webpage*/
     padding-left: 30px;/*my own addition, adds fixed space to left of page*/
     padding-right: 30px; /*my own addition, adds fixed space to right of page*/
@@ -8,7 +8,7 @@ body { /*1. applies to all within the body element*/
 
 header{ /*2. applies to all within the header element*/
     text-align: center; /*aligns the text to the center */
-    color: rgb(29, 70, 61); /*changes the color of the text*/
+    color: rgb(90, 66, 15); /*changes the color of the text*/
 }
 
 .special { /*Extra. applies to all with the special element*/
@@ -66,3 +66,14 @@ main { /*Body of the page without the heading*/
     padding-left: 80px; /*adds space to the left*/
     padding-right: 80px; /*adds space to the left*/
 }
+
+table {
+    border-style: none; /*removes textbox border*/
+    padding-bottom: 20px; /*adds space within the text box below the text*/
+    text-align: center;
+}
+
+.topnav {
+    float: left; /*makes nav bar look better*/
+}
+
