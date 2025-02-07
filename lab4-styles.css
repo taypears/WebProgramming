@@ -48,7 +48,7 @@ a:hover {/*5b. Applies to when link is being hovered over*/
 }
 
 
- /*My own extra additions are below*/
+ /*------------- My own extra additions are below---------------------------------- */
 .title {
     border-style: dotted; /*changes the textbox border style*/
     border-color: darkolivegreen;/*changes the textbox border color*/
