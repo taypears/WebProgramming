@@ -12,15 +12,22 @@
       h1 {/*1b*/
         font-size: 3rem;
         font-weight: bold;
+  			text-shadow:/*4a*/
+    		1px 1px 1px red,
+    		2px 2px 1px red; /*4a*/
        }
 
       h2 {/*1c*/
           font-size: 2rem;
           font-weight: lighter;
+          text-transform: uppercase;/*3a*/
         }
 
       h1, footer { /*2a*/
         text-align: center;
+      }
+			h2 + p {
+        	text-transform: capitalize; /*3b - all have this drop down so will need another identifier*/
       }
 
       /* p {
