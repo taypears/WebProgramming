@@ -14,7 +14,7 @@
         font-weight: bold;
   			text-shadow:/*4a*/
     		1px 1px 1px red,
-    		2px 2px 1px red; /*4a*/
+    		2px 2px 1px red;
        }
 
       h2 {/*1c*/
@@ -22,17 +22,45 @@
           font-weight: lighter;
           text-transform: uppercase;/*3a*/
         }
-
-      h1, footer { /*2a*/
+     
+      h1,
+      footer { /*2a*/
         text-align: center;
       }
-			h2 + p {
-        	text-transform: capitalize; /*3b - all have this drop down so will need another identifier*/
+
+      span { /*4b*/
+        text-shadow: 
+        1px 1px 1px gray,
+    		1px 1px 1px gray;
+      }    
+
+      ul { /*5a - adds square bullet points*/
+        list-style-type: square;
       }
 
-      /* p {
+      ol { /*5b - changes bullets to roman numerals*/
+        list-style-type: upper-roman;
+      }
+
+      p { /*6a*/
+        line-height: 1.6;
+      }
+      
+      li { /*6b*/
+        margin: 1rem;
+      }
+
+      .transform { /*3b - special selector was added to specifically target one sentence*/
+        text-transform: capitalize;
+      }
+
+      /* h2 + p {
+        	text-transform: capitalize; /*3b - all have this drop down so will need another identifier*/
+    
+
+      main p { /*2b - a single space between the selectors specifies all that descend from the first selector*/
       text-align: justify;
-    } */
+    }
 
   </style>
 </head>
@@ -51,11 +79,11 @@
     </section>
     <section>
       <h2>Transforming Text</h2>
-      <p>This paragraph demonstrates text transformation with uppercase, lowercase, and capitalization.</p>
+      <p class="transform">This paragraph demonstrates text transformation with uppercase, lowercase, and capitalization.</p>
     </section>
     <section>
       <h2>Text Shadow</h2>
-      <p>This paragraph demonstrates how to add shadow effects to text.</p>
+      <p><span>This paragraph demonstrates how to add shadow effects to text.</span></p>
     </section>
     <section>
       <h2>Lists</h2>
