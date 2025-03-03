@@ -1,7 +1,7 @@
-main {
-    float:center;
-
-}
+/* main {
+    float:left;
+    margin-right: 15px;
+} */
 
 body {
     background-color: antiquewhite;
@@ -41,4 +41,9 @@ h2 {
 footer p {
     font-style: italic;
     text-align: center;
+}
+
+body {
+    display: inline-grid;
+    padding: 1rem;
 }
