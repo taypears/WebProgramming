@@ -64,6 +64,10 @@ header p {
     text-align: center;
 }
 
+a::before {
+    color: darkolivegreen;
+}
+
 a:hover {/*5b. Applies to when link is being hovered over*/
     text-decoration: none; /*removes underline from link*/
 }
