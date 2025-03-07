@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+            background-color: antiquewhite;
         }
         button {
             font-size: 20px;
@@ -28,6 +29,9 @@
     <h1>Welcome to My Page</h1>
     <button id="nameButton">Click Me!</button>
     <script>
+         //Add a document.write funtion
+    document.write("TayeJa Pearson");
+
         // Select the button using its ID
 const button = document.getElementById("nameButton");
 
@@ -36,6 +40,7 @@ button.addEventListener("click", () => {
     // Prompt the user to enter their name
     const user = prompt("What is your name?");
     
+
     // If a name is entered, update the button text
     if (user) {
         button.textContent = `Hello, ${user}!`;
